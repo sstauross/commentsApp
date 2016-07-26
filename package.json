@@ -1,5 +1,5 @@
 {
-  "name": "Comments App",
+  "name": "CommentsApp",
   "version": "0.0.0",
   "description": "A comments app build with React",
   "main": "server.js",
