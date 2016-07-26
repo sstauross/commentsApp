@@ -1,7 +1,7 @@
 {
-  "name": "CommentsApp",
+  "name": "ToDoApp",
   "version": "0.0.0",
-  "description": "A comments app build with React",
+  "description": "A todo app build with React",
   "main": "server.js",
   "scripts": {
     "dev": "webpack -d --watch",

@@ -1,3 +1,3 @@
-#Comments app
-This is a comments app using React
+#TODO APP
+This is a todo app using React
 

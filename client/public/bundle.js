@@ -57,9 +57,9 @@
 	
 	var _reactDom = __webpack_require__(/*! react-dom */ 33);
 	
-	var _AwesomeComponent = __webpack_require__(/*! ./AwesomeComponent.jsx */ 172);
+	var _TodoItem = __webpack_require__(/*! ./TodoItem.jsx */ 172);
 	
-	var _AwesomeComponent2 = _interopRequireDefault(_AwesomeComponent);
+	var _TodoItem2 = _interopRequireDefault(_TodoItem);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -85,11 +85,11 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(
-	          'p',
+	          'h1',
 	          null,
-	          ' Hello React!'
+	          'My TODO Application'
 	        ),
-	        _react2.default.createElement(_AwesomeComponent2.default, null)
+	        _react2.default.createElement(_TodoItem2.default, null)
 	      );
 	    }
 	  }]);
@@ -21646,9 +21646,9 @@
 
 /***/ },
 /* 172 */
-/*!*****************************************!*\
-  !*** ./client/app/AwesomeComponent.jsx ***!
-  \*****************************************/
+/*!*********************************!*\
+  !*** ./client/app/TodoItem.jsx ***!
+  \*********************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21671,54 +21671,33 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var AwesomeComponent = function (_React$Component) {
-	  _inherits(AwesomeComponent, _React$Component);
+	var TodoItem = function (_React$Component) {
+	  _inherits(TodoItem, _React$Component);
 	
-	  function AwesomeComponent(props) {
-	    _classCallCheck(this, AwesomeComponent);
+	  function TodoItem() {
+	    _classCallCheck(this, TodoItem);
 	
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(AwesomeComponent).call(this, props));
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(TodoItem).call(this));
 	
-	    _this.state = { likesCount: 0 };
-	    _this.onLike = _this.onLike.bind(_this);
+	    _this.state = {};
 	    return _this;
 	  }
 	
-	  _createClass(AwesomeComponent, [{
-	    key: 'onLike',
-	    value: function onLike() {
-	      var newLikesCount = this.state.likesCount + 1;
-	      this.setState({ likesCount: newLikesCount });
-	    }
-	  }, {
+	  _createClass(TodoItem, [{
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        'Likes : ',
-	        _react2.default.createElement(
-	          'span',
-	          null,
-	          this.state.likesCount
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          null,
-	          _react2.default.createElement(
-	            'button',
-	            { onClick: this.onLike },
-	            'Like Me'
-	          )
-	        )
+	        'This is a todo'
 	      );
 	    }
 	  }]);
 	
-	  return AwesomeComponent;
+	  return TodoItem;
 	}(_react2.default.Component);
 	
-	exports.default = AwesomeComponent;
+	exports.default = TodoItem;
 
 /***/ }
 /******/ ]);
